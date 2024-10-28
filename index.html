@@ -2,10 +2,15 @@
 <html lang="fr">
 <body>
     <script>
-        alert("something is: ");
+        
         console.log("ooooooooh la la la la la la");
       // Get all <nav> elements
-const nav = document.querySelector('.JzO0Vc'); 
+        // This will get all elements with the class name "example-class"
+const elements = document.getElementsByClassName("JzO0Vc");
+
+// If you want the first element with that class name
+const nav = elements[0];
+//const nav = document.querySelector('.JzO0Vc'); 
 
 // Example of changing the background color
 nav.style.backgroundColor = 'lightblue';
