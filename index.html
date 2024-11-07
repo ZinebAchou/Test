@@ -1,8 +1,16 @@
 
     <script>
-        document.querySelector('iframe').addEventListener('load', function() {
- const elements=document.querySelector("div[jsname='jkaScf']");
+        document.addEventListener("DOMContentLoaded", function() {
+  const iframe = document.querySelector('iframe');
+  if (iframe) {
+    iframe.addEventListener('load', function() {
+      const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+      const elements=document.querySelector("div[jsname='jkaScf']");
 console.log(elements);
+    });
+  } else {
+    console.log("Iframe not found");
+  }
 });
        // window.onload = function () {
              
