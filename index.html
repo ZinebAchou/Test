@@ -1,6 +1,11 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
+            // Fetch HTML, remove <html> and <body> tags before inserting
+let fetchedContent = '<html><body><div>Content</div></body></html>';
+fetchedContent = fetchedContent.replace(/<\/?(html|body)>/g, '');
+document.querySelector('.w536ob').innerHTML = fetchedContent;
+
   const iframe = document.querySelector('iframe');
   if (iframe) {
     iframe.addEventListener('load', function() {
