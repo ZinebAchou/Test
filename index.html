@@ -4,7 +4,7 @@
             // Fetch HTML, remove <html> and <body> tags before inserting
 let fetchedContent = '<html><body><div>Content</div></body></html>';
 fetchedContent = fetchedContent.replace(/<\/?(html|body)>/g, '');
-document.querySelector('.w536ob').innerHTML = fetchedContent;
+document.getElementsByClassName("w536ob").innerHTML = fetchedContent;
 
   const iframe = document.querySelector('iframe');
   if (iframe) {
